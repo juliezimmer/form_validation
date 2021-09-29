@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -13,31 +14,52 @@
 </head>
 <body>
    <div class="container">
-      <form action="" id="form">
-         
+
+      <form id="form">
          <div class="title">Get Started</div>
          
          <div>
-            <!--username input with fa icon-->
+            <!--username input with fa icons-->
             <label for="username">User Name</label>
             <i class="fas fa-user"></i>
-            <input 
-               type="text"
-               name="username"
-               id="username"
-               placeholder="username" 
-            />
+            <input type="text" name="username" id="username" placeholder="username" />
+            <!--fa danger icon -->
+            <i class="fas fa-exclamation-circle"></i>
+            <!-- success fa icon -->
+            <i class="far fa-check-circle"></i> 
+            <!--error class div-->
+            <div class="error"></div>
          </div>
          
+         <!--email input with fa icon-->
          <div>
-            <input type="email">
+            <label for="email">Email</label>
+            <i class="far fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <!--fa danger icon -->
+            <i class="fas fa-exclamation-circle"></i>
+            <!-- success fa icon -->
+            <i class="far fa-check-circle"></i> 
+            <!--error class div-->
+            <div class="error"></div>
          </div>
+         <!--password input with fa icon-->
          <div>
-            <input type="password">
+            <!--password input with fa icon-->
+            <label for="password">Password</label>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="password" />
+            <!--fa danger icon -->
+            <i class="fas fa-exclamation-circle"></i>
+            <!-- success fa icon -->
+            <i class="far fa-check-circle"></i> 
+            <!--error class div-->
+            <div class="error"></div>
          </div>
-      
+         <button type="submit" id="submit">Submit</button>
       </form>
 
    </div>
 </body>
+<script src="main.js"></script>
 </html>
