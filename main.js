@@ -23,7 +23,7 @@ let username = id("username"),
    });
 
 let engine = (id, serial, message) => {
-   if(id.value === ''){
+   if(id.value.trim() === ''){
       errorMsg[serial].innerHTML = message;
       // changes opacity so the failure icon can be seen //
       failureIcon[serial].style.opacity = "1"; 
