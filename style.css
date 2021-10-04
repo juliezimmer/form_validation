@@ -43,8 +43,46 @@ form div {
    margin-bottom: 15px;
 }
 
-input:hover {
+input:focus {
    border: 2px solid #f2796E;
+}
+
+/* style rules for social media section */
+.btn {
+   display: flex;
+   justify-content: space-between;
+   gap: 15px;
+}
+
+.btn-2{
+   background-color: #4f70b5;
+   color: white;
+}
+
+.btn-1,
+.btn-2 {
+   padding: 10px 5px; 
+   width: 100%;
+   display: flex;
+   gap: 15px;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #c4c4c4;
+   border-radius: 8px;
+   box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.or {
+   text-align: center;
+}
+
+.question {
+   font-size: 15px;
+}
+
+span {
+   color: #f2796E; 
+   cursor: pointer;  
 }
 
 /* Style rules for form icons */

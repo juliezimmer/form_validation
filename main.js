@@ -19,7 +19,6 @@ let username = id("username"),
       engine(username, 0, "Username cannot be blank");
       engine(email, 1, "Email cannot be blank");
       engine(password, 2, "Password cannot be blank");
-      
    });
 
 let engine = (id, serial, message) => {
