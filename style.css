@@ -9,9 +9,41 @@ body {
    font-family: sans-serif;
 }
 
+.container {
+   display: flex;
+}
+
+/* style rules for content sectioin */
+.content {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   background-color: #f2796E;
+   width: 55%;
+   min-height: 100vh;
+   padding: 10px 20px;
+}
+
+.image {
+   background-image: url("./images/illustration.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   /* border: 2px solid black;
+*/   height: 65%;
+}
+.text {
+   text-align: center;
+   color: white;
+   font-size: 18px;
+}
+
 /* Style rules for form section */
 form {
-  max-width: 400px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: top;
+  width: 45%; 
   box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
   padding: 50px;
 }
